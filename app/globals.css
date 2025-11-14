@@ -24,3 +24,44 @@ body {
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
 }
+
+/* Enhanced Input Styles - Only for form inputs */
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="number"],
+input[type="tel"],
+input[type="date"],
+input[type="search"],
+textarea,
+select {
+  color: #111827;
+}
+
+input[type="text"]::placeholder,
+input[type="email"]::placeholder,
+input[type="password"]::placeholder,
+input[type="number"]::placeholder,
+input[type="tel"]::placeholder,
+input[type="search"]::placeholder,
+textarea::placeholder {
+  color: #9ca3af;
+  opacity: 1;
+}
+
+/* Make input text bold and dark when filled */
+input[type="text"]:not(:placeholder-shown),
+input[type="email"]:not(:placeholder-shown),
+input[type="password"]:not(:placeholder-shown),
+input[type="number"]:not(:placeholder-shown),
+input[type="tel"]:not(:placeholder-shown),
+input[type="search"]:not(:placeholder-shown),
+textarea:not(:placeholder-shown) {
+  color: #111827;
+  font-weight: 500;
+}
+
+/* Ensure table cells and other elements are not affected */
+td, th, span, p, div, a, button {
+  font-weight: inherit !important;
+}
