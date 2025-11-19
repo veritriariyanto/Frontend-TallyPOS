@@ -125,15 +125,6 @@ export default function LoginPage() {
               )}
             </button>
           </form>
-
-          {/* Info */}
-          <div className="mt-6 p-4 bg-blue-50 rounded-lg">
-            <p className="text-sm text-blue-800 font-medium mb-2">Kredensial Default:</p>
-            <div className="text-xs text-blue-700 space-y-1">
-              <p>Username: <span className="font-mono font-semibold">admin</span></p>
-              <p>Password: <span className="font-mono font-semibold">admin123</span></p>
-            </div>
-          </div>
         </div>
       </div>
     </div>
